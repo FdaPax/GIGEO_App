@@ -1,0 +1,28 @@
+.main {
+    &__image {
+        height: 5rem;
+        background-image: url(../../assets/img/image-banner.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    } 
+    &__container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1rem;
+    }
+    &__name {
+        h2 {
+            font-family: $montserrat;
+            font-weight: $bold;
+        }
+        p {
+            font-family: $open-sans;
+            font-weight: $regular;
+            color: gray;
+            letter-spacing: 1px;
+        }
+       
+    }
+} 
