@@ -1,5 +1,6 @@
 .video {
   &__title {
+      width: 100vw;
     h3 {
       text-align: center;
       font-family: "Montserrat";
@@ -11,8 +12,10 @@
     padding: 0 3rem 3rem;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
   }
   &__card {
+      padding: 0 1rem;
     h4 {
       font-family: $montserrat;
       font-weight: $bold;
@@ -28,11 +31,41 @@
     }
   }
 }
-@media (min-width: 425px) {
+@media only screen and (min-width: 425px) {
     .video{
         &__card {
             width: 20rem;
         }
         
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .video {
+        &__card {
+            
+        }
+        &__title {
+            h3 {
+                text-align: center; 
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .video {
+        &__container {
+          justify-content: space-between;
+            
+        }
+        &__title {
+            h3 {
+                text-align: left;
+            }
+        }
+        &__card {
+          padding: 0;
+        }
     }
 }

@@ -12,7 +12,12 @@
         align-items: center;
         padding: 1rem;
     }
+    &__yuki {
+        display: flex;
+        align-items: center;
+    }
     &__name {
+        margin-left: 2rem;
         h2 {
             font-family: $montserrat;
             font-weight: $bold;
@@ -26,3 +31,26 @@
        
     }
 } 
+
+@media only screen and (min-width: 768px) {
+    .main {
+        &__image {
+            height: 10rem;
+        }
+    } 
+}
+
+@media only screen and (min-width: 840px) {
+    .main {
+        &__container {
+            justify-content: space-between;
+            margin: 0px 3rem;
+        }
+    } 
+}
+hr {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}

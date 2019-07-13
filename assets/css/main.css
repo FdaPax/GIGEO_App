@@ -9696,10 +9696,6 @@ body {
         margin: 0 auto;
     }
 } */
-.header {
-  background-color: aqua;
-}
-
 .main__image {
   height: 5rem;
   background-image: url(../../assets/img/image-banner.png);
@@ -9713,6 +9709,13 @@ body {
   align-items: center;
   padding: 1rem;
 }
+.main__yuki {
+  display: flex;
+  align-items: center;
+}
+.main__name {
+  margin-left: 2rem;
+}
 .main__name h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -9724,6 +9727,27 @@ body {
   letter-spacing: 1px;
 }
 
+@media only screen and (min-width: 768px) {
+  .main__image {
+    height: 10rem;
+  }
+}
+@media only screen and (min-width: 840px) {
+  .main__container {
+    justify-content: space-between;
+    margin: 0px 3rem;
+  }
+}
+hr {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.video__title {
+  width: 100vw;
+}
 .video__title h3 {
   text-align: center;
   font-family: "Montserrat";
@@ -9734,6 +9758,10 @@ body {
   padding: 0 3rem 3rem;
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+}
+.video__card {
+  padding: 0 1rem;
 }
 .video__card h4 {
   font-family: "Montserrat", sans-serif;
@@ -9749,9 +9777,25 @@ body {
   font-size: 1.1rem;
 }
 
-@media (min-width: 425px) {
+@media only screen and (min-width: 425px) {
   .video__card {
     width: 20rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .video__title h3 {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .video__container {
+    justify-content: space-between;
+  }
+  .video__title h3 {
+    text-align: left;
+  }
+  .video__card {
+    padding: 0;
   }
 }
 /* Container */
@@ -9981,27 +10025,26 @@ body {
   }
 }
 /* Base */
-/* .button {
-  padding: 1rem 4rem;
-  cursor: pointer; //muestra un dedo en el cursor//
-  font-family: $roboto;
-  font-size: $medium;
-  font-weight: $bold;
-} */
-/* Button Scheme */
-/* .button_primary {
-  border: none; //resetear boton//
-  color: $white;
-  background-color: $blue-bell;
-  &:hover {
-    //cuando el usuario pasa por arriba//
-    background-color: $pale-lavander;
-  }
-  &:focus {
-    //cuando es seleccionado//
-    background-color: $gray;
-  }
-} */
+.button {
+  padding: 0.5rem 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.button:hover {
+  background-color: orange;
+}
+.button:focus {
+  background-color: orange;
+}
+.button--light-blue {
+  background-color: #A1DAE2;
+}
+.button--red {
+  background-color: #DF6C65;
+}
+
 .navigation {
   padding: 1rem;
 }
@@ -10021,6 +10064,9 @@ body {
 }
 .navigation__list {
   list-style: none;
+  display: inline-grid;
+  margin-right: 1rem;
+  margin-top: 1rem;
 }
 .navigation__item a {
   display: block;
@@ -10052,6 +10098,8 @@ body {
 .collapsible label {
   display: block;
   margin-right: 2rem;
+  position: relative;
+  top: 5px;
 }
 
 #menu {
@@ -10065,10 +10113,12 @@ input:checked ~ .navigation__container {
 @media only screen and (min-width: 768px) {
   .navigation {
     margin: 0;
+    padding: 0;
   }
   .navigation__logo {
     position: absolute;
     margin-left: 3rem;
+    top: 20px;
   }
   .navigation__container {
     max-height: 100%;
@@ -10076,6 +10126,8 @@ input:checked ~ .navigation__container {
   }
   .navigation__list {
     display: inline-flex;
+    position: relative;
+    top: 2px;
   }
   .navigation__item a {
     margin: 1rem;
@@ -10097,6 +10149,14 @@ input:checked ~ .navigation__container {
     display: none;
   }
 }
+.fa-2x {
+  font-size: 1.4em;
+}
+
+.fa-3x {
+  font-size: 2em;
+}
+
 /* Base */
 .thumbnail {
   border-radius: 50%;

@@ -1,23 +1,24 @@
 /* Base */
-/* .button {
-  padding: 1rem 4rem;
-  cursor: pointer; //muestra un dedo en el cursor//
-  font-family: $roboto;
-  font-size: $medium;
-  font-weight: $bold;
-} */
-
-/* Button Scheme */
-/* .button_primary {
-  border: none; //resetear boton//
-  color: $white;
-  background-color: $blue-bell;
+.button {
+  padding: .5rem 1.5rem;
+  font-family: $open-sans;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: $light;
+  
   &:hover {
     //cuando el usuario pasa por arriba//
-    background-color: $pale-lavander;
+    background-color:orange;
   }
   &:focus {
     //cuando es seleccionado//
-    background-color: $gray;
+    background-color: orange;
   }
-} */
+  &--light-blue {
+    background-color: $celeste;
+  }
+  &--red {
+    background-color: $rojo;
+  }
+
+}
